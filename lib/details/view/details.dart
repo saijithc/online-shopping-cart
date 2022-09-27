@@ -45,15 +45,17 @@ class DetailsScreen extends StatelessWidget {
                   Column(
                     children: [
                       Container(
-                          padding: const EdgeInsets.all(35),
-                          height: MediaQuery.of(context).size.height * 0.5,
-                          width: MediaQuery.of(context).size.width,
-                          decoration: BoxDecoration(
-                              color: const Color.fromARGB(255, 226, 226, 223),
-                              borderRadius: BorderRadius.circular(5)),
-                          child: Image.network(
-                            itemsDetails[currentIndex].images[0],
-                          )),
+                        // padding: const EdgeInsets.all(35),
+                        height: MediaQuery.of(context).size.height * 0.5,
+                        width: MediaQuery.of(context).size.width,
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 226, 226, 223),
+                            borderRadius: BorderRadius.circular(5)),
+                        child: Image.network(
+                          itemsDetails[currentIndex].images[0],
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.024,
                         width: double.infinity,
