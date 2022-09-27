@@ -49,7 +49,12 @@ class HomeScreen extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                primary: Colors.black26),
+                                primary: context
+                                            .watch<HomeProvider>()
+                                            .selectedIndex ==
+                                        index
+                                    ? Colors.black54
+                                    : Colors.black12),
                             onPressed: () => value.changeIndex(index),
                             child: customText(value.categoryNames[index])),
                       );
