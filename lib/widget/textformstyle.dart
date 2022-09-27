@@ -10,7 +10,7 @@ InputDecoration textFieldInputDecoration(
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(10),
     ),
-    fillColor: Colors.black.withOpacity(0.1),
+    fillColor: Colors.white,
     filled: true,
     labelText: hintText,
     labelStyle:
