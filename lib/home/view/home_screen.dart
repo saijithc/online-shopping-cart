@@ -105,8 +105,8 @@ class HomeScreen extends StatelessWidget {
                                               MaterialPageRoute(
                                                   builder: (ctx) =>
                                                       DetailsScreen(
-                                                        itemsDetails: item,
-                                                        currentIndex: index,
+                                                        itemsDetails:
+                                                            item[index],
                                                       )));
                                         },
                                         child: SizedBox(

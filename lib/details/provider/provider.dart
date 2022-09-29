@@ -1,12 +1,15 @@
+import 'dart:developer';
+
 import 'package:flutter/widgets.dart';
 import 'package:machinetask/services/notificatio.dart';
 
 class DetailProvider with ChangeNotifier {
   showNotification({body, payload, title, url}) {
+    log('inF$url');
     AppNotificationService().showNotification(
       url: url,
       body: body,
-      id: 0,
+      id: 10,
       payload: payload,
       title: title,
     );
